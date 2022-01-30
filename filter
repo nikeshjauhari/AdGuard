@@ -1,0 +1,13 @@
+# Allow Domains
+@@||fcs.org^
+@@||mas-ext.amazon.com^$important
+
+#Rewrite Rules
+||www.youtube.com^$dnsrewrite=restrictmoderate.youtube.com,client=~192.168.0.9
+||m.youtube.com^$dnsrewrite=restrictmoderate.youtube.com,client=~192.168.0.9
+||youtubei.googleapis.com^$dnsrewrite=restrictmoderate.youtube.com,client=~192.168.0.9
+||youtube.googleapis.com^$dnsrewrite=restrictmoderate.youtube.com,client=~192.168.0.9
+||www.youtube-nocookie.com^$dnsrewrite=restrictmoderate.youtube.com,client=~192.168.0.9
+||www.duckduckgo.com^$dnsrewrite=safe.duckduckgo.com,client=~192.168.0.9
+||www.bing.com^$dnsrewrite=strict.bing.com,client=~192.168.0.9
+||www.google.com^$dnsrewrite=forcesafesearch.google.com,client=~192.168.0.9
